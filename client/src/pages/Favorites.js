@@ -46,7 +46,7 @@ function Favorites() {
   if (error) return <div style={{ color: 'red' }}>{error}</div>;
 
   return (
-    <div>
+    <div className="container">
       <h1>Your Favorite Coins</h1>
       {favorites.length === 0 ? (
         <div>No favorites yet.</div>

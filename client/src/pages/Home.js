@@ -100,7 +100,7 @@ function Home() {
   if (error) return <div style={{ color: 'red' }}>{error}</div>;
 
   return (
-    <div>
+    <div className="container">
       <h1>Top Cryptocurrencies</h1>
       <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: 20 }}>
         <thead>
