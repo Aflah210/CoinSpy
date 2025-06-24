@@ -17,6 +17,7 @@ function Navbar() {
       {user ? (
         <>
           <Link to="/dashboard" style={{ marginRight: '1rem' }}>Dashboard</Link>
+          <Link to="/favorites" style={{ marginRight: '1rem' }}>Favorites</Link>
           {user.email && <span style={{ marginRight: '1rem' }}>Logged in as: {user.email}</span>}
           <button onClick={handleLogout} style={{ marginRight: '1rem' }}>Logout</button>
         </>

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import Favorites from './pages/Favorites';
 import { AuthProvider } from './AuthContext';
 import PrivateRoute from './components/PrivateRoute';
 import logo from './logo.svg';
@@ -21,6 +22,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+            <Route path="/favorites" element={<PrivateRoute><Favorites /></PrivateRoute>} />
           </Routes>
         </div>
       </Router>
